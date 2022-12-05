@@ -6,3 +6,4 @@
 # About 
 Here I'm introducing my skills with standard commands in the terminal. Every file is a GIF so you may see how I make usual things like creating, moving, deleting folders and files
 
+new_line
