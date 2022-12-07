@@ -1,4 +1,4 @@
-# Task 2: Using **_echo, cat, vim, nano, grep, found_**   
+# Task 2: Using **_echo, cat, nano, vim, grep, found_**   
 1. Make a folder named **task2** and jump into it
 2. Create a file1 using **touch**
 3. Fill  the created file with 1 line through **echo**
