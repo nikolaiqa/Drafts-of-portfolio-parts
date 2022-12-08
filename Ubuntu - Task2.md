@@ -14,3 +14,5 @@
 13. Make sure there's no file there
 14. Clear the commands history 
 ___
+
+![chek](Task%202%20(touch,%20nano,%20cat,%20vim,%20grep).gif)
