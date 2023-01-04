@@ -1,7 +1,7 @@
-<img align="left" alt="MySQL" title="MySQL" width="100px" style="padding-left:150px;" src="https://www.vectorlogo.zone/logos/mysql/mysql-icon.svg" />
+<img align="center" alt="MySQL" title="MySQL" width="100px" style="padding-left:150px;" src="https://www.vectorlogo.zone/logos/mysql/mysql-icon.svg" />
 
 
-<a href="https://github.com/nikolaiqa"><img align="left" alt="Trello" title="Trello" width="100px" style="padding-left:20px;" src="https://www.vectorlogo.zone/logos/trello/trello-icon.svg"></a>
+<a href="https://github.com/nikolaiqa"><img align="center" alt="Trello" title="Trello" width="100px" style="padding-left:20px;" src="https://www.vectorlogo.zone/logos/trello/trello-icon.svg"></a>
 
 <br/>
 <br/>
