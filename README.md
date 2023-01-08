@@ -1,7 +1,7 @@
 
 <table align="center">
- <tr><img align="middle" alt="Ubuntu" title="Ubuntu" width="100px" src="./Sourses/adb.svg"/></tr>
- <tr><img align="middle" alt="Jira" title="Jira" width="100px" src="./Sourses/androidstudio-original.svg"/></tr>
+ <td><img align="center" alt="Ubuntu" title="Ubuntu" width="100px" src="./Sourses/adb.svg"/></td>
+ <td><img align="center" alt="Jira" title="Jira" width="100px" src="./Sourses/androidstudio-original.svg"/></td>
 </table>
 
 # About 
