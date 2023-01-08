@@ -1,8 +1,8 @@
 
 <table align="center" border="0">
-<tr>
- <td><img align="middle" alt="Ubuntu" title="Ubuntu" width="100px" src="./Sourses/adb.svg"/></td>
- <td><img align="middle" alt="Jira" title="Jira" width="100px" src="./Sourses/androidstudio-original.svg"/></td>
+<tr border="0">
+ <td border="0"><img align="middle" alt="Ubuntu" title="Ubuntu" width="100px" src="./Sourses/adb.svg"/></td>
+ <td border="0"><img align="middle" alt="Jira" title="Jira" width="100px" src="./Sourses/androidstudio-original.svg"/></td>
 </tr>
 </table>
 
