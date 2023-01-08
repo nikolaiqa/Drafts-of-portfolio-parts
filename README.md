@@ -1,6 +1,6 @@
 
-<table align="center">
-<tr style="border:none">
+<table align="center" style="border-collapse: collapse">
+<tr style="border-collapse: collapse">
 <th><img align="center" alt="Ubuntu" title="Ubuntu" width="100px" src="./Sourses/adb.svg"/></th>
 
  <th><img align="center" alt="Jira" title="Jira" width="100px" src="./Sourses/androidstudio-original.svg"/></th>
