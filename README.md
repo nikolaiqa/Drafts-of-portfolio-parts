@@ -1,6 +1,8 @@
-<img align="left" alt="Ubuntu" title="Ubuntu" width="70px" style="padding-left:120px;" src="https://www.vectorlogo.zone/logos/ubuntu/ubuntu-icon.svg">
+<h1>
+<img align="left" alt="Ubuntu" title="Ubuntu" width="70px" src="https://www.vectorlogo.zone/logos/ubuntu/ubuntu-icon.svg">
 
-<img align="left" alt="Jira" title="Jira" width="70px" style="padding-left:30px;" src="https://www.vectorlogo.zone/logos/atlassian_jira/atlassian_jira-icon.svg">
+<img align="left" alt="Jira" title="Jira" width="70px" src="https://www.vectorlogo.zone/logos/atlassian_jira/atlassian_jira-icon.svg">
+</h1>
 
 <br/>
 <br/>
