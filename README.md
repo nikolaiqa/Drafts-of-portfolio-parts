@@ -1,9 +1,9 @@
 
-<table align="center" style="border-collapse: collapse">
-<tr style="border-collapse: collapse">
-<th><img align="center" alt="Ubuntu" title="Ubuntu" width="100px" src="./Sourses/adb.svg"/></th>
+<table align="center" style="border-style:hidden">
+<tr>
+<th style="border-style:hidden"><img align="center" alt="Ubuntu" title="Ubuntu" width="100px" src="./Sourses/adb.svg"/></th>
 
- <th><img align="center" alt="Jira" title="Jira" width="100px" src="./Sourses/androidstudio-original.svg"/></th>
+ <th style="border-style:hidden"><img align="center" alt="Jira" title="Jira" width="100px" src="./Sourses/androidstudio-original.svg"/></th>
 </tr>
 </table>
 
