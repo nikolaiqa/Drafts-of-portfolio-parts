@@ -1,7 +1,7 @@
 
-<table align="center" border="0">
- <th border="0"><img align="center" alt="Ubuntu" title="Ubuntu" width="100px" src="./Sourses/adb.svg"/></th>
- <th border="0"><img align="center" alt="Jira" title="Jira" width="100px" src="./Sourses/androidstudio-original.svg"/></th>
+<table align="center" style="border:0">
+ <td style="border:0"><img align="center" alt="Ubuntu" title="Ubuntu" width="100px" src="./Sourses/adb.svg"/></td>
+ <td style="border:0"><img align="center" alt="Jira" title="Jira" width="100px" src="./Sourses/androidstudio-original.svg"/></td>
 </table>
 
 # About 
