@@ -1,4 +1,5 @@
-# Task 2: Using **_echo, cat, nano, vim, grep, found_**   
+# Task 2: Using **_echo, nano, cat, vim, grep_**
+ ## Conditions of the task:  
 1. Make a folder named **task2** and jump into it
 2. Create a file1 using **touch**
 3. Fill  the created file with 1 line through **echo**
@@ -14,5 +15,10 @@
 13. Make sure there's no file there
 14. Clear the commands history 
 ___
+note: **_to force the solution to be working from the beginning just refresh your browser page_**
 
-![chek](Task%202%20(touch,%20nano,%20cat,%20vim,%20grep).gif)
+## Solution of the task:
+![solution_of_task2](Sourses/Task%202%20(echo,%20nano,%20cat,%20vim,%20grep).gif)
+___
+## Complete solution overview
+![FS2](Sourses/Final_solution%202.png)

@@ -1,5 +1,4 @@
+<p align="center"> <a href="https://github.com/nikolaiqa/Ubuntu/blob/main/Task%201%20(pwd%2C%20ls%2C%20mkdir%2C%20mv%2C%20rm).md"><img  alt="Ubuntu" title="Ubuntu" width="100" height="100" src="./Sourses/Ubuntu.svg"/> </a> <a href="https://github.com/nikolaiqa/Ubuntu/blob/main/Task%202%20(echo%2C%20nano%2C%20cat%2C%20vim%2C%20grep).md"><img  alt="Bash" title="Bash" width="100" height="100" src="./Sourses/Bash.svg"/> </a> </p>
 
-<p align="center"> <a href="https://github.com/nikolaiqa"><img  alt="Jira" title="Jira" width="100" height="100" src="./Sourses/adb.svg"/> </a> <a href="https://github.com/nikolaiqa"><img  alt="Trello" title="Trello" width="100" height="100" src="./Sourses/androidstudio-original.svg"/> </a> </a> </p>
-
-# About 
-Here I'm introducing my skills with standard commands in the terminal. Every file is a GIF so you may see how I make usual things like creating, moving, deleting folders and files
+# About
+Here I'm introducing my skills with standard commands in the terminal. Each task in the repository involves both a condition and a solution. Every solution of the task is a GIF-file so you may see with ease how I manage usual things like creating, moving, deleting folders and files in dynamic way. Also there're PNG-files in the tasks representing a full solution at once. A "Sourses" folder stores all the used in this repository files.
