@@ -2,4 +2,4 @@
 </p>
 
 # About 
-Here I'm introducing my skills with standard commands in the terminal. Every file is a GIF so you may see how I make usual things like creating, moving, deleting folders and files
+This time I'm about to present one of my collections from Postman, which is extremely special to me because it was my first. Funny fact: at the very begining I wanted to create it the way how it looks right now, but I couldn't manage it due to I didn't know how to write JSON-code correctly. So I had slighty to learn JS (that took some time, of course) and now I'am able to introduce it for you
