@@ -2,7 +2,7 @@
 
 ## ```POST``` - **Add new place**
 
-### URI ```https://rahulshettyacademy.com/maps/api/place/add/json?key=qaclick123```
+### URI: https://rahulshettyacademy.com/maps/api/place/add/json?key=qaclick123
 
 ### PARAMS
 **KEY**: key <br> **VALUE**: qaclick123
