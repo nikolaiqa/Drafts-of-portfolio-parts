@@ -51,7 +51,7 @@ Content-Length: 308
 ```JS
 let jData = pm.response.json(); // assign the http-response as the 'jData' variable
 
-let placeID = jData.place_id; // assign the place_id value as the 'placeID' variable
+let placeID = jData.place_id; // assign the place_id value as the 'placeID' variable (e.g. d965a5c91d7499b8b5e3620c392de4e2 )
 
 pm.collectionVariables.set("place_id", placeID); // set a collection variable with the 'placeID' value 
 ```
