@@ -48,13 +48,10 @@ Content-Length: 308
 
 ### TESTS tab
 
-```javascript 
-let jData = pm.response.json(); 
-// assign the http-response as the 'jData' variable
+```JS
+let jData = pm.response.json(); // assign the http-response as the 'jData' variable
 
-let placeID = jData.place_id; 
-// assign the place_id value as the 'placeID' variable
+let placeID = jData.place_id; // assign the place_id value as the 'placeID' variable
 
-pm.collectionVariables.set("place_id", placeID); 
-// set a collection variable with the 'placeID' value 
+pm.collectionVariables.set("place_id", placeID); // set a collection variable with the 'placeID' value 
 ```
