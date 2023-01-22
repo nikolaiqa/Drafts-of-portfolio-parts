@@ -2,10 +2,13 @@
 
 ## ```POST``` - **Add new place**
 
-### URI: https://rahulshettyacademy.com/maps/api/place/add/json?key=qaclick123
+### Base URL: https://rahulshettyacademy.com
 
-### PARAMS
+### Endpoint: ```/maps/api/place/add/json```
+
+### Params
 **KEY**: key <br> **VALUE**: qaclick123
+
 ### Example HTTP-request
 ```HTTP 
 POST /maps/api/place/add/json?key=qaclick123 HTTP/1.1
@@ -28,7 +31,7 @@ Content-Length: 308
     "flat",
     "park"
   ],
-  "website": "http://google.com",
+  "website": "https://www.google.com",
   "language": "English"
 }
 ```
@@ -45,7 +48,7 @@ Content-Length: 308
 }
 ```
 
-### TESTS tab
+### Test tab
 
 ```JS
 let jData = pm.response.json(); // assign the http-response as the 'jData' variable
