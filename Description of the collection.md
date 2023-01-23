@@ -7,6 +7,7 @@
 ### Endpoint: /maps/api/place/add/json
 
 ### Params
+
 <table>
   <tbody>
     <tr>
@@ -22,7 +23,8 @@
   </tbody>
 </table>
 
-### Example HTTP-request
+### Example HTTP-
+
 ```HTTP 
 POST /maps/api/place/add/json?key=qaclick123 HTTP/1.1
 Host: rahulshettyacademy.com
@@ -30,6 +32,7 @@ Content-Type: application/json
 Content-Length: 308
 ```
 ###### Body raw (JSON)
+
 ```json
 {
   "location": {
@@ -79,6 +82,7 @@ pm.collectionVariables.set("place_id", placeID); // set a collection variable wi
 ### Endpoint: /maps/api/place/get/json
 
 ### Params
+
 <table>
   <tbody>
     <tr>
@@ -103,13 +107,16 @@ pm.collectionVariables.set("place_id", placeID); // set a collection variable wi
 </table>
 
 ### Example HTTP-request
+
 ```HTTP 
 GET /maps/api/place/get/json?key=qaclick123&place_id=d965a5c91d7499b8b5e3620c392de4e2 HTTP/1.1
 Host: rahulshettyacademy.com
 ```
 
 ### Example HTTP-responses 
+
 ###### if everything's OK:
+
 ```json
 {
     "location": {
@@ -126,6 +133,7 @@ Host: rahulshettyacademy.com
 }
 ```
 ###### if not:
+
 ```json
 {
     "msg": "Get operation failed, looks like place_id  doesn't exists"
@@ -134,7 +142,7 @@ Host: rahulshettyacademy.com
 
 ### Tests tab
 
-```JS
+```javascript
 let jData = pm.response.json(); // assign the http-response as the 'jData' variable
 let address = jData.address; // assign the address value from the http-response as the 'address' variable
 let exp_address = pm.collectionVariables.get("place_address"); // assign the coolection variable place_address as a 'exp_address'
