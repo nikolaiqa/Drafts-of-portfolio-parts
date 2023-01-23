@@ -151,13 +151,13 @@ let placeID = pm.collectionVariables.get("place_id"); // assign the coolection v
 pm.test("Check address", function () {
     if (placeID != null){ // If the place_id exists
         if (address === exp_address){ // and the current address matches the address, which was set as a collection variable
-        postman.setNextRequest('Update place') &
-        console.log ('The address of the place is correct'); // then next request should be 'Update place'
-        } else postman.setNextRequest('Delete place') &
-        console.log ('The address of the place was clarify');; // if the addresses doesn't match then next request should be 'Delete place' 
-    } else postman.setNextRequest(null) & 
-    console.log ('The place was deleted'); // If the place_id doesn't exist at all then the collection running must be stopped 
-}); 
+        console.log ('The address of the place is correct') &
+        postman.setNextRequest('Update place'); // then next request should be 'Update place'
+        } else console.log ('The address of the place was changed') &
+        postman.setNextRequest('Delete place'); // if the addresses doesn't match then next request should be 'Delete place' 
+    } else console.log ('The place was deleted') & 
+    postman.setNextRequest(null); // If the place_id doesn't exist at all then the collection running must be stopped 
+});  
 ```
 
 ---
