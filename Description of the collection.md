@@ -108,8 +108,8 @@ GET /maps/api/place/get/json?key=qaclick123&place_id=d965a5c91d7499b8b5e3620c392
 Host: rahulshettyacademy.com
 ```
 
-### Example HTTP-response 
-
+### Example HTTP-responses 
+###### if everything's OK
 ```json
 {
     "location": {
@@ -123,6 +123,12 @@ Host: rahulshettyacademy.com
     "types": "flat,park",
     "website": "http://google.com",
     "language": "English"
+}
+```
+###### or not
+```json
+{
+    "msg": "Get operation failed, looks like place_id  doesn't exists"
 }
 ```
 
