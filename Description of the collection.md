@@ -109,7 +109,7 @@ Host: rahulshettyacademy.com
 ```
 
 ### Example HTTP-responses 
-###### if everything's OK
+###### if everything's OK:
 ```json
 {
     "location": {
@@ -125,7 +125,7 @@ Host: rahulshettyacademy.com
     "language": "English"
 }
 ```
-###### or not
+###### if not:
 ```json
 {
     "msg": "Get operation failed, looks like place_id  doesn't exists"
@@ -141,11 +141,11 @@ let exp_address = pm.collectionVariables.get("place_address"); // assign the coo
 let placeID = pm.collectionVariables.get("place_id"); // assign the coolection variable place_id as a 'placeID'
 
 pm.test("Check adress", function () {
-    if (placeID != null){
-        if (address === exp_address){
-        postman.setNextRequest('Update place');
+    if (placeID != null){ // If the place_id exists
+        if (address === exp_address){ //and the current address matches the address that was set as a collection variable
+        postman.setNextRequest('Update place'); // then next request should be 'Update place'
         } else postman.setNextRequest('Delete place');
     } else postman.setNextRequest(null); 
 });
-// Implemented logic is: 1) If the place_id exists and the current address matches the address that was set as a collection variable then next request should be 'Update place', 2) If the place_id exists and the current address doesn't match the address that was set as a collection variable then next request should be 'Delete place', 3) If the place_id doesn't exist then running of the collection must be stopped 
+// Implemented logic is: 1)  and the current address matches the address that was set as a collection variable then next request should be 'Update place', 2) If the place_id exists and the current address doesn't match the address that was set as a collection variable then next request should be 'Delete place', 3) If the place_id doesn't exist then running of the collection must be stopped 
 ```
