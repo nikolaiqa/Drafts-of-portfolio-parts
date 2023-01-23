@@ -66,7 +66,7 @@ Content-Length: 308
 ```JS
 let jData = pm.response.json(); // assign the http-response as the 'jData' variable
 
-let placeID = jData.place_id; // assign the place_id value as the 'placeID' variable (e.g. d965a5c91d7499b8b5e3620c392de4e2)
+let placeID = jData.place_id; // assign the place_id value from the http-response as the 'placeID' variable (e.g. d965a5c91d7499b8b5e3620c392de4e2)
 
 pm.collectionVariables.set("place_id", placeID); // set a collection variable with a value from the 'placeID' variable
 ```
@@ -136,8 +136,16 @@ Host: rahulshettyacademy.com
 
 ```JS
 let jData = pm.response.json(); // assign the http-response as the 'jData' variable
+let address = jData.address; // assign the address value from the http-response as the 'address' variable
+let exp_address = pm.collectionVariables.get("place_address"); // assign the coolection variable place_address as a 'exp_address'
+let placeID = pm.collectionVariables.get("place_id"); // assign the coolection variable place_id as a 'placeID'
 
-let placeID = jData.place_id; // assign the place_id value as the 'placeID' variable (e.g. d965a5c91d7499b8b5e3620c392de4e2)
-
-pm.collectionVariables.set("place_id", placeID); // set a collection variable with a value from the 'placeID' variable
+pm.test("Check adress", function () {
+    if (placeID != null){
+        if (address === exp_address){
+        postman.setNextRequest('Update place');
+        } else postman.setNextRequest('Delete place');
+    } else postman.setNextRequest(null); 
+});
+// Implemented logic is: 1) If the place_id exists and the current address matches the address that was set as a collection variable then next request should be 'Update place', 2) If the place_id exists and the current address doesn't match the address that was set as a collection variable then next request should be 'Delete place', 3) If the place_id doesn't exist then running of the collection must be stopped 
 ```
