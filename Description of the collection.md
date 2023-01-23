@@ -23,7 +23,7 @@
   </tbody>
 </table>
 
-### Example HTTP-
+### Example HTTP-request
 
 ```HTTP 
 POST /maps/api/place/add/json?key=qaclick123 HTTP/1.1
@@ -75,7 +75,7 @@ pm.collectionVariables.set("place_id", placeID); // set a collection variable wi
 ```
 ---
 
-## ```GET``` - **Check added, changed or deleted place**
+## ```GET``` - **Check place**
 
 ### Base URL: https://rahulshettyacademy.com
 
@@ -153,6 +153,64 @@ pm.test("Check adress", function () {
       if (address === exp_address){ // and the current address matches the address, which was set as a collection variable
       postman.setNextRequest('Update place'); // then next request should be 'Update place'
       } else postman.setNextRequest('Delete place'); // if the addresses doesn't match then next request should be 'Delete place' 
-  } else postman.setNextRequest(null); // If the place_id doesn't exist at all then running of the collection must be stopped 
+  } else postman.setNextRequest(null); // If the place_id doesn't exist at all then the collection running must be stopped 
 }); 
 ```
+
+---
+
+## ```PUT``` - **Update place**
+
+### Base URL: https://rahulshettyacademy.com
+
+### Endpoint: /maps/api/place/update/json
+
+### Example HTTP-request
+
+```HTTP 
+PUT /maps/api/place/update/json HTTP/1.1
+Host: rahulshettyacademy.com
+Content-Type: application/json
+Content-Length: 94
+```
+###### Body raw (JSON)
+
+```json
+{
+    "key":"qaclick123",
+    "place_id":"d965a5c91d7499b8b5e3620c392de4e2", 
+    "address":"Politkovskaya street, 071006"
+}
+```
+
+### Example HTTP-response 
+
+###### if everything's OK:
+
+```json
+{
+    "msg": "Address successfully updated"
+}
+```
+
+###### if not:
+
+```json
+{
+    "msg": "Update address operation failed, looks like the data doesn't exists"
+}
+```
+
+### Tests tab
+
+```javascript 
+let jData = pm.response.json(); // assign the http-response as the 'jData' variable
+let msg = jData.msg; // assign the msg value from the http-response as the 'msg' variable
+
+pm.test("Check address", function () {
+    if (msg === "Address successfully updated"){ // if the updating is successful 
+        postman.setNextRequest('Check place')} // then the collection running jump to the 'Check place' request 
+    else postman.setNextRequest(null); // if something's wrong then the collection running must be stopped
+});
+```
+---
