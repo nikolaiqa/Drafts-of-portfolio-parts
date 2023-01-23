@@ -150,7 +150,7 @@ let placeID = pm.collectionVariables.get("place_id"); // assign the coolection v
 
 pm.test("Check address", function () {
     if (placeID != null){ // If the place_id exists
-        if (address === exp_address){ // and the current address matches the address, which was set as a collection variable
+        if (address === exp_address){ // and if the current address matches the address, which was set as a collection variable
         console.log ('The address of the place is correct') &
         postman.setNextRequest('Update place'); // then next request should be 'Update place'
         } else console.log ('The address of the place was changed') &
@@ -265,7 +265,7 @@ let jData = pm.response.json(); // assign the http-response as the 'jData' varia
 let status = jData.status; // assign the status value from the http-response as the 'status' variable
 
 pm.test("Check status", function () {
-    pm.expect(status).to.eql('OK'); // checking up whether  
+    pm.expect(status).to.eql('OK'); // checking up whether the removing is successful  
 });
 
 pm.collectionVariables.set("place_id", null); // drop the collection variable
