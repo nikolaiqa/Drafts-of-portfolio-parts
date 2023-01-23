@@ -142,10 +142,9 @@ let placeID = pm.collectionVariables.get("place_id"); // assign the coolection v
 
 pm.test("Check adress", function () {
     if (placeID != null){ // If the place_id exists
-        if (address === exp_address){ //and the current address matches the address that was set as a collection variable
+        if (address === exp_address){ // and the current address matches the address that was set as a collection variable
         postman.setNextRequest('Update place'); // then next request should be 'Update place'
-        } else postman.setNextRequest('Delete place');
-    } else postman.setNextRequest(null); 
-});
-// Implemented logic is: 1)  and the current address matches the address that was set as a collection variable then next request should be 'Update place', 2) If the place_id exists and the current address doesn't match the address that was set as a collection variable then next request should be 'Delete place', 3) If the place_id doesn't exist then running of the collection must be stopped 
+        } else postman.setNextRequest('Delete place'); // if the addresses doesn't match then next request should be 'Delete place' 
+    } else postman.setNextRequest(null); // If the place_id doesn't exist then running of the collection must be stopped 
+}); 
 ```
