@@ -70,3 +70,68 @@ let placeID = jData.place_id; // assign the place_id value as the 'placeID' vari
 
 pm.collectionVariables.set("place_id", placeID); // set a collection variable with a value from the 'placeID' variable
 ```
+<br>
+
+## ```GET``` - **Check added, changed or deleted place**
+
+### Base URL: https://rahulshettyacademy.com
+
+### Endpoint: /maps/api/place/get/json
+
+### Params
+<table>
+  <tbody>
+    <tr>
+      <th>№</th>
+      <th>KEY</th>
+      <th>VALUE</th>
+      <th>Commentary</th>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>key</td>
+      <td>qaclick123</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>place_id</td>
+      <td>{{place_id}}</td>
+      <td>It's taken from the collection variable, which was set after POST-response (e.g. d965a5c91d7499b8b5e3620c392de4e2) </td>
+    </tr>
+  </tbody>
+</table>
+
+### Example HTTP-request
+```HTTP 
+GET /maps/api/place/get/json?key=qaclick123&place_id=d965a5c91d7499b8b5e3620c392de4e2 HTTP/1.1
+Host: rahulshettyacademy.com
+```
+
+### Example HTTP-response 
+
+```json
+{
+    "location": {
+        "latitude": "-38.383494",
+        "longitude": "33.427362"
+    },
+    "accuracy": "51",
+    "name": "Frontline house",
+    "phone_number": "(+91) 983 893 3937",
+    "address": "Nemtsov street, 250215",
+    "types": "flat,park",
+    "website": "http://google.com",
+    "language": "English"
+}
+```
+
+### Tests tab
+
+```JS
+let jData = pm.response.json(); // assign the http-response as the 'jData' variable
+
+let placeID = jData.place_id; // assign the place_id value as the 'placeID' variable (e.g. d965a5c91d7499b8b5e3620c392de4e2)
+
+pm.collectionVariables.set("place_id", placeID); // set a collection variable with a value from the 'placeID' variable
+```
