@@ -73,7 +73,11 @@ let placeID = jData.place_id; // assign the place_id value from the http-respons
 
 pm.collectionVariables.set("place_id", placeID); // set a collection variable with a value from the 'placeID' variable
 ```
+<br>
+
 ---
+
+<br>
 
 ## ```GET``` - **Check place**
 
@@ -160,7 +164,11 @@ pm.test("Check address", function () {
 });  
 ```
 
+<br>
+
 ---
+
+<br>
 
 ## ```PUT``` - **Update place**
 
@@ -186,7 +194,7 @@ Content-Length: 94
 }
 ```
 
-### Example HTTP-response 
+### Example HTTP-responses 
 
 ###### if everything's OK:
 
@@ -216,7 +224,11 @@ pm.test("Check address", function () {
   else postman.setNextRequest(null); // if something's wrong then the collection running must be stopped
 });
 ```
+<br>
+
 ---
+
+<br>
 
 ## ```DELETE``` - **Delete place** 
 
@@ -240,7 +252,7 @@ Content-Length: 55
 }
 ```
 
-### Example HTTP-response 
+### Example HTTP-responses 
 
 ###### if everything's OK:
 
@@ -272,4 +284,8 @@ pm.collectionVariables.set("place_id", null); // drop the collection variable
 
 postman.setNextRequest('Check place'); // jump to the 'Check place' request to define that the place was truly deleted
 ```
+<br>
+
 ---
+
+<br>
