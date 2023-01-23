@@ -70,7 +70,7 @@ let placeID = jData.place_id; // assign the place_id value from the http-respons
 
 pm.collectionVariables.set("place_id", placeID); // set a collection variable with a value from the 'placeID' variable
 ```
-<br>
+---
 
 ## ```GET``` - **Check added, changed or deleted place**
 
@@ -142,9 +142,9 @@ let placeID = pm.collectionVariables.get("place_id"); // assign the coolection v
 
 pm.test("Check adress", function () {
     if (placeID != null){ // If the place_id exists
-        if (address === exp_address){ // and the current address matches the address that was set as a collection variable
+        if (address === exp_address){ // and the current address matches the address, which was set as a collection variable
         postman.setNextRequest('Update place'); // then next request should be 'Update place'
         } else postman.setNextRequest('Delete place'); // if the addresses doesn't match then next request should be 'Delete place' 
-    } else postman.setNextRequest(null); // If the place_id doesn't exist then running of the collection must be stopped 
+    } else postman.setNextRequest(null); // If the place_id doesn't exist at all then running of the collection must be stopped 
 }); 
 ```
