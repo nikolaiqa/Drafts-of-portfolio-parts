@@ -208,9 +208,9 @@ let jData = pm.response.json(); // assign the http-response as the 'jData' varia
 let msg = jData.msg; // assign the msg value from the http-response as the 'msg' variable
 
 pm.test("Check address", function () {
-    if (msg === "Address successfully updated"){ // if the updating is successful 
-        postman.setNextRequest('Check place')} // then the collection running jump to the 'Check place' request 
-    else postman.setNextRequest(null); // if something's wrong then the collection running must be stopped
+  if (msg === "Address successfully updated"){ // if the updating is successful 
+      postman.setNextRequest('Check place')} // then the collection running jump to the 'Check place' request 
+  else postman.setNextRequest(null); // if something's wrong then the collection running must be stopped
 });
 ```
 ---
