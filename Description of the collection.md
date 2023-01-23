@@ -148,7 +148,7 @@ let address = jData.address; // assign the address value from the http-response 
 let exp_address = pm.collectionVariables.get("place_address"); // assign the coolection variable place_address as a 'exp_address'
 let placeID = pm.collectionVariables.get("place_id"); // assign the coolection variable place_id as a 'placeID'
 
-pm.test("Check adress", function () {
+pm.test("Check address", function () {
   if (placeID != null){ // If the place_id exists
       if (address === exp_address){ // and the current address matches the address, which was set as a collection variable
       postman.setNextRequest('Update place'); // then next request should be 'Update place'
