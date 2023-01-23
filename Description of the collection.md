@@ -33,16 +33,16 @@ Content-Length: 308
 ```json
 {
   "location": {
-    "lat": -38.383494,
-    "lng": 33.427362
+      "lat": -38.383494,
+      "lng": 33.427362
   },
   "accuracy": 51,
   "name": "Frontline house",
   "phone_number": "(+91) 983 893 3937",
   "address": "Nemtsov street, 250215",
   "types": [
-    "flat",
-    "park"
+      "flat",
+      "park"
   ],
   "website": "https://www.google.com",
   "language": "English"
@@ -141,10 +141,10 @@ let exp_address = pm.collectionVariables.get("place_address"); // assign the coo
 let placeID = pm.collectionVariables.get("place_id"); // assign the coolection variable place_id as a 'placeID'
 
 pm.test("Check adress", function () {
-    if (placeID != null){ // If the place_id exists
-        if (address === exp_address){ // and the current address matches the address, which was set as a collection variable
-        postman.setNextRequest('Update place'); // then next request should be 'Update place'
-        } else postman.setNextRequest('Delete place'); // if the addresses doesn't match then next request should be 'Delete place' 
-    } else postman.setNextRequest(null); // If the place_id doesn't exist at all then running of the collection must be stopped 
+  if (placeID != null){ // If the place_id exists
+      if (address === exp_address){ // and the current address matches the address, which was set as a collection variable
+      postman.setNextRequest('Update place'); // then next request should be 'Update place'
+      } else postman.setNextRequest('Delete place'); // if the addresses doesn't match then next request should be 'Delete place' 
+  } else postman.setNextRequest(null); // If the place_id doesn't exist at all then running of the collection must be stopped 
 }); 
 ```
