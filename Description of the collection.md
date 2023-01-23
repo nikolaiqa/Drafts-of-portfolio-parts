@@ -4,7 +4,7 @@
 
 ### Base URL: https://rahulshettyacademy.com
 
-### Endpoint: ```/maps/api/place/add/json```
+### Endpoint: /maps/api/place/add/json
 
 ### Params
 <table>
