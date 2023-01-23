@@ -7,7 +7,20 @@
 ### Endpoint: ```/maps/api/place/add/json```
 
 ### Params
-**KEY**: key <br> **VALUE**: qaclick123
+<table>
+  <tbody>
+    <tr>
+      <th>№</th>
+      <th>KEY</th>
+      <th>VALUE</th>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>key</td>
+      <td>qaclick123</td>
+    </tr>
+  </tbody>
+</table>
 
 ### Example HTTP-request
 ```HTTP 
