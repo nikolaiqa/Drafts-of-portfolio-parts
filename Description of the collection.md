@@ -3,9 +3,6 @@
 ## Description:
 ### This collection imitates working with areas and places (e.g. buildings, parks, houses, etc) that could be add into a map app, update or remove. These actions are based on four basic requests, which are actually nothing more than standard CRUD methods: `POST`, `GET`, `PUT`, `DELETE` and each of them will be reviewed closely below. <br> Also at the end of description of methods it might be found an example of collection running from Postman client in GIF format
 
-## Collection variables:
-
-
 ## Methods:
 
 ## ```POST``` - **Add new place**
@@ -16,7 +13,7 @@
 
 ### Params
 
-<table align="right">
+<table>
   <tbody>
     <tr>
       <th>№</th>
