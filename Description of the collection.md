@@ -26,7 +26,14 @@
       <td>place_id</td>
       <td>d965a5c91d7499b8b5e3620c392de4e2</td>
       <td></td>
-      <td>The variable's set after <code style="color:#E5AC3C;">POST</code> request </td>
+      <td>The variable's value is set after <code>POST</code> request dynamically by scripts of Tests tab </td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>place_address</td>
+      <td>Nemtsov street, 270215</td>
+      <td>Nemtsov street, 270215</td>
+      <td>The variable's value is constant and is needed for Tests tab of the <code>GET</code> request</td>
     </tr>
   </tbody>
 </table>
@@ -34,7 +41,7 @@
 
 ## Methods:
 
-<h2><code style="color:#E5AC3C;">POST</code> <b>- Add new place</b></h2>
+## ```POST``` - **Add place**
 
 ### Base URL: https://rahulshettyacademy.com
 
