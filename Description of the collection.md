@@ -1,9 +1,7 @@
 # Maps API collection
 
 ## Description:
-### This collection imitates working with areas and places (e.g. buildings, parks, houses, etc) that could be add into a map app, update or remove. These actions are based on four basic requests, which are actually nothing more than standard CRUD methods: POST, GET, PUT, DELETE and each of them will be reviewed closely below.
-
-<br>
+### This collection imitates working with areas and places (e.g. buildings, parks, houses, etc) that could be add into a map app, update or remove. These actions are based on four basic requests, which are actually nothing more than standard CRUD methods: `POST`, `GET`, `PUT`, `DELETE` and each of them will be reviewed closely below.
 
 ## Methods:
 
