@@ -138,7 +138,7 @@ pm.collectionVariables.set("place_id", placeID); // set a collection variable wi
     </tr>
     <tr>
       <td>place_id</td>
-      <td>{{place_id}} <br> (e.g. d965a5c91d7499b8b5e3620c392de4e2)</td>
+      <td>{{place_id}} <br> (d965a5c91d7499b8b5e3620c392de4e2)</td>
       <td>required param that's taken from the collection variable, which was set after POST-response</td>
     </tr>
   </tbody>
