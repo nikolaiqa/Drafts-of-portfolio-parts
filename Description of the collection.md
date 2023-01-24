@@ -50,10 +50,12 @@
     <tr>
       <th>KEY</th>
       <th>VALUE</th>
+      <th>Commentary</th>
     </tr>
     <tr>
       <td>key</td>
       <td>qaclick123</td>
+      <td>required param </td>
     </tr>
   </tbody>
 </table>
@@ -132,12 +134,12 @@ pm.collectionVariables.set("place_id", placeID); // set a collection variable wi
     <tr>
       <td>key</td>
       <td>qaclick123</td>
-      <td></td>
+      <td>required param</td>
     </tr>
     <tr>
       <td>place_id</td>
       <td>{{place_id}}</td>
-      <td>It's taken from the collection variable, which was set after POST-response (e.g. d965a5c91d7499b8b5e3620c392de4e2) </td>
+      <td>required param that's taken from the collection variable, which was set after POST-response (e.g. d965a5c91d7499b8b5e3620c392de4e2) </td>
     </tr>
   </tbody>
 </table>
