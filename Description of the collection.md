@@ -8,28 +8,24 @@
 <table>
   <tbody>
     <tr>
-      <th>№</th>
       <th>VARIABLE</th>
       <th>INITIAL VALUE</th>
       <th>CURRENT VALUE</th>
       <th>Commentary</th>
     </tr>
     <tr>
-      <td>1</td>
       <td>URL</td>
       <td>https://rahulshettyacademy.com</td>
       <td>https://rahulshettyacademy.com</td>
       <td>Base URL for all requests</td>
     </tr>
     <tr>
-      <td>2</td>
       <td>place_id</td>
       <td>d965a5c91d7499b8b5e3620c392de4e2</td>
       <td></td>
       <td>The variable's value is set after <code>POST</code> request dynamically by scripts of Tests tab </td>
     </tr>
     <tr>
-      <td>3</td>
       <td>place_address</td>
       <td>Nemtsov street, 270215</td>
       <td>Nemtsov street, 270215</td>
@@ -52,12 +48,10 @@
 <table>
   <tbody>
     <tr>
-      <th>№</th>
       <th>KEY</th>
       <th>VALUE</th>
     </tr>
     <tr>
-      <td>1</td>
       <td>key</td>
       <td>qaclick123</td>
     </tr>
@@ -131,19 +125,16 @@ pm.collectionVariables.set("place_id", placeID); // set a collection variable wi
 <table>
   <tbody>
     <tr>
-      <th>№</th>
       <th>KEY</th>
       <th>VALUE</th>
       <th>Commentary</th>
     </tr>
     <tr>
-      <td>1</td>
       <td>key</td>
       <td>qaclick123</td>
       <td></td>
     </tr>
     <tr>
-      <td>2</td>
       <td>place_id</td>
       <td>{{place_id}}</td>
       <td>It's taken from the collection variable, which was set after POST-response (e.g. d965a5c91d7499b8b5e3620c392de4e2) </td>
