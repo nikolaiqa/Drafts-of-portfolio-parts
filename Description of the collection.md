@@ -17,7 +17,7 @@
       <td>URL</td>
       <td>https://rahulshettyacademy.com</td>
       <td>https://rahulshettyacademy.com</td>
-      <td>Base URL for all requests</td>
+      <td>Base URL for all requests, taken as a variable to simplify writing requests' URI</td>
     </tr>
     <tr>
       <td>place_id</td>
@@ -37,7 +37,7 @@
 
 ## Methods:
 
-## ```POST``` - **Add place**
+## ```POST``` - **Add place** (*sending data of a new place through the request's body*)
 
 ### Base URL: https://rahulshettyacademy.com
 
@@ -116,7 +116,7 @@ pm.collectionVariables.set("place_id", placeID); // set a collection variable wi
 
 <br>
 
-## ```GET``` - **Check place**
+## ```GET``` - **Check place** (*defining details of an added or updated place, determining whether the place was removed*)
 
 ### Base URL: https://rahulshettyacademy.com
 
@@ -204,7 +204,7 @@ pm.test("Check address", function () {
 
 <br>
 
-## ```PUT``` - **Update place**
+## ```PUT``` - **Update place** (*allows to change only a place address through the request's body*)
 
 ### Base URL: https://rahulshettyacademy.com
 
@@ -264,7 +264,7 @@ pm.test("Check address", function () {
 
 <br>
 
-## ```DELETE``` - **Delete place** 
+## ```DELETE``` - **Delete place** (*removing a place from the app's database*)
 
 ### Base URL: https://rahulshettyacademy.com
 
