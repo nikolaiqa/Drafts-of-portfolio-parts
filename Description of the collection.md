@@ -116,7 +116,7 @@ pm.collectionVariables.set("place_id", placeID); // set a collection variable wi
 
 <br>
 
-## ```GET``` - **Check place** (*defining details of an added or updated place, determining whether the place was removed*)
+## ```GET``` - **Check place** (*defining details of an added or updated place*)
 
 ### Base URL: https://rahulshettyacademy.com
 
