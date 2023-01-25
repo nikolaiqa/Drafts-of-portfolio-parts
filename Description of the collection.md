@@ -322,4 +322,7 @@ postman.setNextRequest('Check place'); // jump to the 'Check place' request to d
 
 ---
 
-<br>
+## How the collection should run:
+<p align="center">
+<img  alt="Collection running" src="./Sourses/Collection_running.gif"/>
+</p>
