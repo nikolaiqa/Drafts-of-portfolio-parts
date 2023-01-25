@@ -326,3 +326,7 @@ postman.setNextRequest('Check place'); // jump to the 'Check place' request to d
 <p align="center">
 <img  alt="Collection running" src="./Sourses/Collection_running.gif"/>
 </p>
+
+## To run the collection your own just copy the link below and past it in your Postman client (Import > Link):
+
+### https://api.postman.com/collections/22139076-325a66ba-e6aa-44fd-ad2e-90ce7ff9b91c?access_key=PMAT-01GQ4ACPTN9VSMK106KECEP7JW
